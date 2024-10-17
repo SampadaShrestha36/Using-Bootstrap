@@ -138,10 +138,6 @@
     </div>
 
     <!-- education ends -->
-
-    <!-- projects starts -->
-
-    <!-- projects ends -->
     
     <!-- connect starts -->
      <section class="pt-5" id="contact">
@@ -153,29 +149,33 @@
   <div class="container-auto px-5 py-5 alert contact">
   <div class="row contact">
     <div class="col-8 contact">
-      <form class="contact">
-    <div class="mb-3 contact">
-      <label for="exampleInputEmail1" class="form-label contact">Full Name</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3 contact ">
-      <label for="exampleInputPassword1" class="form-label contact">Email address</label>
-      <input type="email" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="form-floating contact">
-      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-      <label for="floatingTextarea2 " class="contact">Message</label>
-    </div>
-    <button type="button" class="btn btn-dark mt-3">Submit</button>
-  </form>
+      <form action="/submit" method="POST" class="contact">
+        <div class="mb-3 contact">
+            <label for="name" class="form-label contact">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3 contact">
+            <label for="email" class="form-label contact">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3 contact">
+            <label for="contact" class="form-label contact">Contact Number</label>
+            <input type="tel" class="form-control" id="contact" name="contact" required>
+        </div>
+        <div class="mb-3 contact">
+            <label for="message" class="form-label contact">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
     </div>
     <div class="align-items-center col-4 contact">
       <h2 class="text-center contact">Get in touch through:</h2>
       <ul class="nobullet">
-      <li class="mx-3 my-3 contact"><button class="btn btn-light"><i class="fa-brands fa-google"></i>  Gmail</button></li>
-      <li class="mx-3 my-3 contact"><button class="btn btn-light"><i class="fa-brands fa-github"></i>  Github</button></li>
-      <li class="mx-3 my-3 contact"><button class="btn btn-light"><i class="fa-brands fa-facebook"></i>  Facebook</button></li>
-      <li class="mx-3 my-3 contact"><button class="btn btn-light"><i class="fa-brands fa-instagram"></i>  Instagram</button></li>
+      <li class="mx-3 my-3 contact"><a href="mailto:sampadashrestha435@gmail.com" target="_blank" class="btn btn-light"><i class="fa-brands fa-google"></i>Gmail</a></li>
+      <li class="mx-3 my-3 contact"><a href="https://github.com/SampadaShrestha36" target="_blank" class="btn btn-light"><i class="fa-brands fa-github"></i>  Github</a></li>
+      <li class="mx-3 my-3 contact"><a href="https://www.facebook.com/sampada.shrestha.313" target="_blank"  class="btn btn-light "><i class="fa-brands fa-facebook" ></i>Facebook</a></li>
+      <li class="mx-3 my-3 contact"><a href="https://www.instagram.com/sampada_shrestha/" target="_blank" class="btn btn-light"><i class="fa-brands fa-instagram"></i>  Instagram</a></li>
     </ul>
     </div>
   </div>
