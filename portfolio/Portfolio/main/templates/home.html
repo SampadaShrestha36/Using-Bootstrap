@@ -81,7 +81,7 @@
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center flex-column pb-5 abcde"> <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-title="Learn More About Me" data-bs-custom-class="custom-tooltip">Learn More</button></div>
+    
     
     <!-- About end -->
     
@@ -149,8 +149,9 @@
   <div class="container-auto px-5 py-5 alert contact">
   <div class="row contact">
     <div class="col-8 contact">
-      <form action="/submit" method="POST" class="contact">
+      <form action="{% url 'submit' %}" method="POST" class="contact">
         <div class="mb-3 contact">
+          {% csrf_token %}
             <label for="name" class="form-label contact">Full Name</label>
             <input type="text" class="form-control" id="name" name="name" required>
         </div>
@@ -160,7 +161,7 @@
         </div>
         <div class="mb-3 contact">
             <label for="contact" class="form-label contact">Contact Number</label>
-            <input type="tel" class="form-control" id="contact" name="contact" required>
+            <input type="tel" class="form-control" id="contact" name="contactno" required>
         </div>
         <div class="mb-3 contact">
             <label for="message" class="form-label contact">Message</label>
